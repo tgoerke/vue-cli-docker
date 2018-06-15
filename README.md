@@ -6,9 +6,9 @@ A quite simple docker container to start with vue, vue-cli and firebase.
 
 ``` bash
 # Clone the repository
-https://github.com/klessou/vue-cli-docker
+https://github.com/tgoerke/vue-cli-docker
 
-git clone git@github.com:klessou/vue-cli-docker.git
+git clone git@github.com:tgoerke/vue-cli-docker.git
 cd vue-cli-docker
 
 # If you already have a vue-cli project, put it in app folder
@@ -16,11 +16,11 @@ cd vue-cli-docker
 # Start the container
 docker-compose up -d
 
-# Prepare your environment
-. ./dev.sh
-
 # Open your local url
-http://localhost:8080/
+http://localhost:8081/
+
+# Run bash in docker container
+docker exec -ti vue-cli-docker bash
 ```
 
 ## Firebase deployment
